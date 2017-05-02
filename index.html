@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Practice</title>
+	<style type="text/css" media="screen">
+		.the-box {
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			color: white;
+			padding: 10px;
+			border: 5px solid black;
+			margin: 10px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		#the-block {
+
+		}
+
+		#nav-bar {
+			height: 60px;
+			background-color: black;
+			color: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+
+		body {
+			position: relative;
+		}
+
+		.footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+
+	<!-- 1. A block level element, by default, takes up all space to the right and the left
+	2. It can have a height and a width.
+	3. Nothing can be on either side (because it's 100%), and it ignores margin.
+	4. If you change the size, it will still take up 100%, but the rest outside of the width, will be margin. -->
+	<div id="nav-bar">
+		This is the main nav bar
+	</div>
+	<div id="container">
+	<div id="the-block">
+		Some text in a block
+	</div>
+
+	<div id="the-block2">
+		Some more text in a block.
+	</div>
+
+		<!-- Inline Elements:
+		1. Will respect left and right margin, but not top and bottom.
+		2. No problem whats on the left or the right
+		3. with a few exceptions (namely) you CANNOT tell them how big to be (height or width)
+		4. will gladly ignore all block element rules unless forced otherwise. -->
+
+		A cool image about how I feel...
+
+		<img src="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg"/>
+ 		<img src="https://slack-imgs.com/?c=1&url=http%3A%2F%2Fstarecat.com%2Fcontent%2Fwp-content%2Fuploads%2Ftwo-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg"/>
+
+	<div class="the-box">
+		I'm a box!!
+	</div>
+		
+	<div class="the-box">
+		I'm a box!!
+	</div>	
+
+	<div class="footer">
+		Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  
+		Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  
+		Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  
+	</div>
+
+		
+
+
+</body>
+</html>
